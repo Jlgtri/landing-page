@@ -3,71 +3,66 @@ import ApexCharts from "apexcharts";
 class Chart {
   static init() {
     var options = {
-      series: [40, 12, 28, 20],
-      labels: [
-        "Pre-Sale",
-        "Marketing Development and Team",
-        "Liquidity",
-        "Community Activity Voting for Growth",
-      ],
+      series: [40, 28, 20, 12],
+      labels: ["Pre-Sale", "Liquidity", "Marketing", "Team"],
       chart: {
         width: 530,
-        type: "donut",
+        type: "donut"
       },
       theme: {
         monochrome: {
           enabled: true,
-          color: "#0662c5",
+          color: "#00225e",
           shadeTo: "light",
-          shadeIntensity: 0.65,
-        },
+          shadeIntensity: 0.65
+        }
       },
       responsive: [
         {
           breakpoint: 480,
           options: {
             chart: {
-              width: "100%",
+              width: "100%"
             },
             legend: {
-              position: "bottom",
-            },
-          },
-        },
-      ],
+              position: "bottom"
+            }
+          }
+        }
+      ]
     };
 
     var chart = new ApexCharts(document.querySelector("#chart"), options);
     chart.render();
 
     var options2 = {
-      series: [30, 70],
-      labels: ["Marketing & Development", "Liquidity"],
+      series: [70, 30],
+      labels: ["Liquidity", "Marketing & Development"],
       chart: {
         width: 470,
-        type: "donut",
+        type: "donut"
       },
       theme: {
         monochrome: {
           enabled: true,
-          color: "#0662c5",
+          color: "#00225e",
           shadeTo: "light",
-          shadeIntensity: 0.65,
-        },
+          shadeIntensity: 0.65
+        }
       },
       responsive: [
         {
           breakpoint: 480,
           options: {
             chart: {
-              width: "97%",
+              width: "97%"
             },
             legend: {
-              position: "bottom",
-            },
-          },
-        },
-      ],
+              position: "bottom"
+            }
+          }
+        }
+      ]
     };
 
     var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);

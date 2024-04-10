@@ -1,18 +1,14 @@
 .countdown {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 40px;
 
-    h3 {
-        color: white;
-        font-size: 24px;
+  h3 {
+    color: white;
+    font-size: 24px;
+    @include breakpoint(mobile) {
+      font-size: 16px;
     }
-}
-
-.day,
-.hour,
-.minute,
-.second {
-    font-size: 3rem;
+  }
 }

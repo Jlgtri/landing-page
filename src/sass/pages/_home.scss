@@ -5,7 +5,7 @@
   position: relative;
   background-color: $main-color;
   opacity: 1;
-  background-image: radial-gradient(#6780cf 1px, #022caf 1px);
+  background-image: radial-gradient($main-color2 1px, $main-color 1px);
   background-size: 20px 20px;
   margin-top: -10px;
 
@@ -16,11 +16,16 @@
 
   &-logo {
     width: 270px;
-    animation: bounce 1.4s infinite ease-out alternate;
+    animation: bounce 2s infinite ease-out alternate;
+    margin-top: 156px;
+
+    @include breakpoint(tabletmobile) {
+      margin-top: 216px;
+    }
 
     @include breakpoint(mobile) {
       width: 150px;
-      margin-top: 70px;
+      margin-top: 186px;
     }
   }
 
@@ -33,12 +38,23 @@
     @include breakpoint(mobile) {
       font-size: 30px;
     }
+
+    &-gradient {
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(
+        109deg,
+        #a4c1ff,
+        #000fdb 40%,
+        #6600db 90%
+      );
+    }
   }
 
   &-subtitle {
     color: rgba(white, 0.7);
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 40px;
 
     @include breakpoint(mobile) {
@@ -142,10 +158,10 @@
   background-size: 28px 28px;
   background-image: repeating-linear-gradient(
     to right,
-    #375aa0,
-    #375aa0 1.4px,
-    #214896 1.4px,
-    #214896
+    $main-color,
+    $main-color2 1.4px,
+    $main-color 1.4px,
+    $main-color2
   );
 
   .title {
@@ -252,10 +268,10 @@
   background-size: 28px 28px;
   background-image: repeating-linear-gradient(
     to right,
-    #375aa0,
-    #375aa0 1.4px,
-    #214896 1.4px,
-    #214896
+    $main-color2,
+    $main-color2 1.4px,
+    $main-color 1.4px,
+    $main-color
   );
 
   .title {
@@ -338,14 +354,14 @@
   padding-top: 100px;
   padding-bottom: 120px;
   background: $main-color;
-  background-color: #022caf;
+  background-color: $main-color;
   opacity: 1;
   background-image: repeating-radial-gradient(
       circle at 0 0,
       transparent 0,
-      #022caf 20px
+      $main-color 20px
     ),
-    repeating-linear-gradient(#6780cf55, #6780cf);
+    repeating-linear-gradient($main-color, $main-color2);
 
   .title {
     color: white;

@@ -1,17 +1,18 @@
 // Global Import
 window.jQuery = window.$ = require("jquery");
-import "bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "bootstrap";
 
 AOS.init({
-  once: true,
+  once: true
 });
 
 // import module
-import { Scroll, Chart } from "./modules";
+import { Chart, Countdown, Scroll } from "./modules";
 
-jQuery(function () {
-  Scroll.init();
+jQuery(function() {
   Chart.init();
+  Countdown.init();
+  Scroll.init();
 });
