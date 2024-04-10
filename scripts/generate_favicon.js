@@ -10,7 +10,7 @@ const htmlBasename = "./indexxxx.html"; // HTML file basename.
 // Configuration (see above in the README file).
 const configuration = {
   path: dest, // Path for overriding default icons path. `string`
-  appName: "$EVOKX", // Your application's name. `string`
+  appName: "EVOKX", // Your application's name. `string`
   appShortName: null, // Your application's short_name. `string`. Optional. If not set, appName will be used
   appDescription: null, // Your application's description. `string`
   developerName: null, // Your (or your developer's) name. `string`

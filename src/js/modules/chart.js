@@ -3,8 +3,8 @@ import ApexCharts from "apexcharts";
 class Chart {
   static init() {
     var options = {
-      series: [40, 28, 20, 12],
-      labels: ["Pre-Sale", "Liquidity", "Marketing", "Team"],
+      series: [55, 30, 10, 5],
+      labels: ["Presale", "Liquidity", "OKX Listing", "Team"],
       chart: {
         width: 530,
         type: "donut"

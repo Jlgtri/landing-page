@@ -1,4 +1,4 @@
-# \$EVOKX Landing Page
+# \EVOKX Landing Page
 
 ```
 Telegram: https://t.me/
@@ -7,9 +7,9 @@ GitHub: https://github.com/
 Email: evotoken.com@gmail.com
 ```
 
-#### This public repo contains the \$EVOKX landing page.
+#### This public repo contains the \EVOKX landing page.
 
-Main \$EVOKX links:
+Main \EVOKX links:
 
 - [Website](https://at.finance/)
 - [White Paper](https://github.com/)

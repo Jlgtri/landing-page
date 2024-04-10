@@ -29,6 +29,10 @@
     color: hsla(0, 0%, 100%, 0.5);
     margin-top: 10px;
 
+    &-compliance {
+      color: white;
+    }
+
     &:hover {
       color: white;
     }

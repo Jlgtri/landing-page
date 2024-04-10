@@ -1,0 +1,48 @@
+.legal {
+  background: #010e28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  br {
+    content: "A" !important;
+    display: block !important;
+    margin-top: 1em !important;
+  }
+
+  &-text-block {
+    max-width: 50%;
+    margin: 0% 100px;
+    color: white;
+
+    @include breakpoint(desktop) {
+      max-width: 75%;
+    }
+    @include breakpoint(tablet) {
+      max-width: 100%;
+    }
+    @include breakpoint(tabletmobile) {
+      max-width: 100%;
+    }
+    @include breakpoint(mobileandrotate) {
+      max-width: 100%;
+    }
+    @include breakpoint(mobilerotate) {
+      max-width: 100%;
+    }
+    @include breakpoint(mobile) {
+      max-width: 100%;
+      margin: 0% 40px;
+    }
+    @include breakpoint(smallmobile) {
+      max-width: 100%;
+      margin: 0% 25px;
+    }
+    @include breakpoint(rotate) {
+      max-width: 100%;
+      margin: 0% 25px;
+    }
+  }
+}
